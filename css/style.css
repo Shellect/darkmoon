@@ -5,6 +5,7 @@
    font-style: normal;
    font-weight: 300;
 }
+
 @font-face {
    font-family: "Open Sans";
    src: local("OpenSans-Regular"),
@@ -12,6 +13,7 @@
    font-style: normal;
    font-weight: 400;
 }
+
 @font-face {
    font-family: "Open Sans";
    src: local("OpenSans-Medium"),
@@ -19,6 +21,7 @@
    font-style: normal;
    font-weight: 500;
 }
+
 @font-face {
    font-family: "Open Sans";
    src: local("OpenSans-SemiBold"),
@@ -26,6 +29,7 @@
    font-style: normal;
    font-weight: 600;
 }
+
 @font-face {
    font-family: "Open Sans";
    src: local("OpenSans-Bold"),
@@ -33,6 +37,7 @@
    font-style: normal;
    font-weight: 700;
 }
+
 @font-face {
    font-family: "Open Sans";
    src: local("OpenSans-ExtraBold"),
@@ -41,6 +46,29 @@
    font-weight: 800;
 }
 
+@font-face {
+   font-family: "Playfair Display";
+   src: local("PlayfairDisplay-Regular"), 
+      url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+   font-style: normal;
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: "Playfair Display";
+   src: local("PlayfairDisplay-Bold"), 
+      url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+   font-style: normal;
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: "Playfair Display";
+   src: local("PlayfairDisplay-Black"), 
+      url('../fonts/PlayfairDisplay-Black.ttf') format('truetype');
+   font-style: normal;
+   font-weight: 900;
+}
 
 
 
@@ -59,7 +87,8 @@ body {
    font-family: 'Open Sans', sans-serif;
    font-size: 14px;
 
-   background-color: #353535;
+   color: #fff;
+   background-color: #1D1D1D;
 }
 
 a {
@@ -67,11 +96,15 @@ a {
    text-decoration: none;
 }
 
+
+
 .container {
    max-width: 1170px;
    padding: 0 30px;
    margin: 0 auto;
 }
+
+
 
 .header {
    padding: 10px 0;
@@ -82,13 +115,17 @@ a {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   min-height: 70px;
+   min-height: 50px;
 }
 
 .logo {
-   font-size: 22px;
+   font-family: 'Playfair Display', serif;
+   font-size: 24px;
+   font-weight: 700;
    color: #fff;
 }
+
+
 
 .menu__list {
    display: flex;
@@ -96,6 +133,56 @@ a {
    font-size: 16px;
 }
 
-.btn {
-   font-size: 16px;
+.menu__link {
+   padding: 10px 25px;
+
+   border-radius: 0px;
+   text-decoration: none;
+   cursor: pointer;
+   transition: .1s;
 }
+
+.menu__link:hover {
+   color: #cfcfcf;
+}
+
+
+
+.btn {
+   padding: 10px 20px;
+   border: none;
+
+   font-size: 16px;
+   color: #fff;
+   border-radius: 0;
+   background: rgba(187, 107, 253, 1);
+   cursor: pointer;
+}
+
+
+
+.title {
+   font-family: 'Playfair Display', serif;
+}
+
+
+.top {
+   padding: 100px 0 25px;
+}
+
+.top__title {
+   font-size: 65px;
+   font-weight: 900;
+   text-align: center;
+}
+
+.top__descr {
+   margin: 30px 0 0;
+
+   font-family: 'Open Sans', sans-serif;
+   font-size: 25px;
+   font-weight: 400;
+   text-align: center;
+}
+
+
