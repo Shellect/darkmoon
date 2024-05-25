@@ -99,7 +99,7 @@ a {
 
 
 .container {
-   max-width: 1170px;
+   width: 100%;
    padding: 0 30px;
    margin: 0 auto;
 }
@@ -107,8 +107,14 @@ a {
 
 
 .header {
-   padding: 10px 0;
+   min-width: 1170px;
    border-bottom: 1px solid #d9d9d9;
+}
+
+.header__wrapper {
+   width: 1170px;
+   padding: 10px 0;
+   margin: 0 auto;
 }
 
 .header__inner {
@@ -122,6 +128,7 @@ a {
    font-family: 'Playfair Display', serif;
    font-size: 24px;
    font-weight: 700;
+   text-transform: uppercase;
    color: #fff;
 }
 
@@ -167,7 +174,9 @@ a {
 
 
 .top {
+   width: 1170px;
    padding: 100px 0 25px;
+   margin: 0 auto;
 }
 
 .top__title {
@@ -182,7 +191,50 @@ a {
    font-family: 'Open Sans', sans-serif;
    font-size: 25px;
    font-weight: 400;
+   line-height: 1.4;
    text-align: center;
 }
 
 
+
+.big-picture {
+   min-width: 1170px;
+   border-bottom: 1px solid #d9d9d9;
+
+}
+
+.big-picture__wrapper {
+   width: 1170px;
+   padding: 65px 0 24px;
+   margin: 0 auto;
+}
+
+.big-picture__inner {
+   min-height: 374px;
+
+   position: relative;
+}
+
+.big-picture__bg {
+   width: 1170px;
+   height: 350px;
+   margin-left: -35px;
+   background: #fff url(../images/bg.jpg) center / cover no-repeat;
+}
+
+.big-picture__btn {
+   max-width: 220px;
+   margin: 0 auto;
+   padding: 15px 40px;
+   margin: 0 auto;
+
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+
+
+.about {
+   padding: 70px 0 0;
+}
