@@ -48,7 +48,7 @@
 
 @font-face {
    font-family: "Playfair Display";
-   src: local("PlayfairDisplay-Regular"), 
+   src: local("PlayfairDisplay-Regular"),
       url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
    font-style: normal;
    font-weight: 400;
@@ -56,7 +56,7 @@
 
 @font-face {
    font-family: "Playfair Display";
-   src: local("PlayfairDisplay-Bold"), 
+   src: local("PlayfairDisplay-Bold"),
       url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
    font-style: normal;
    font-weight: 700;
@@ -64,7 +64,7 @@
 
 @font-face {
    font-family: "Playfair Display";
-   src: local("PlayfairDisplay-Black"), 
+   src: local("PlayfairDisplay-Black"),
       url('../fonts/PlayfairDisplay-Black.ttf') format('truetype');
    font-style: normal;
    font-weight: 900;
@@ -96,7 +96,9 @@ a {
    text-decoration: none;
 }
 
-
+main {
+   min-width: 1170px;
+}
 
 .container {
    width: 100%;
@@ -159,7 +161,10 @@ a {
    padding: 10px 20px;
    border: none;
 
+   font-family: 'Open Sans', sans-serif;
    font-size: 16px;
+   font-weight: 300;
+   line-height: 1;
    color: #fff;
    border-radius: 0;
    background: rgba(187, 107, 253, 1);
@@ -233,15 +238,17 @@ a {
 }
 
 .big-picture__btn {
-   max-width: 220px;
+   max-width: 235px;
    margin: 0 auto;
-   padding: 15px 40px;
+   padding: 20px 50px;
    margin: 0 auto;
 
    position: absolute;
    left: 0;
    right: 0;
    bottom: 0;
+
+   font-weight: 400;
 }
 
 
@@ -264,7 +271,6 @@ a {
 
 .services {
    min-width: 1170px;
-   border-bottom: 1px solid #d9d9d9;
 }
 
 .services__wrapper {
@@ -366,5 +372,184 @@ a {
 }
 
 .services__item-btn {
+   padding: 20px 50px;
    margin-top: auto;
+}
+
+
+
+.send-contacts {
+   min-width: 1170px;
+
+   position: relative;
+
+   background: #1D1D1D url(../images/leave-contacts-bg.jpg) 50% 50% / cover no-repeat fixed;
+   overflow: hidden;
+
+}
+
+.send-contacts::after {
+   content: '';
+
+   width: 100%;
+   height: 100%;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 0;
+
+   background-color: #000;
+   opacity: 0.5;
+}
+
+.send-contacts__wrapper {
+   width: 1170px;
+   padding: 100px 0 110px;
+   margin: 0 auto;
+}
+
+.send-contacts__inner {
+   position: relative;
+   z-index: 1;
+
+   text-align: center;
+}
+
+.send-contacts__title {
+   margin: 0 0 65px;
+
+   text-align: center;
+}
+
+.send-contacts__form {
+   display: flex;
+   justify-content: space-between;
+   padding: 30px;
+   margin: 0 0 20px;
+}
+
+.send-contacts__box {
+   display: flex;
+   justify-content: space-between;
+   width: 780px;
+}
+.send-contacts__btn {
+   padding: 15px 53px;
+   margin: 0 31px 0 0;
+}
+
+
+
+.inp {
+   width: 31%;
+   height: 50px;
+   border: 1px solid #000;
+   padding: 4px 6px 4px 10px;
+   margin: 0 10px;
+
+   font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 20px;
+   border-radius: 0;
+   color: #000;
+   outline: none;
+}
+
+.inp::placeholder {
+   color: #000;
+}
+
+.inp:focus {
+   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(82, 168, 236, .6);
+}
+
+
+
+.reviews {
+   min-width: 1170px;
+}
+
+.reviews__wrapper {
+   width: 1170px;
+   padding: 100px 0 110px;
+   margin: 0 auto;
+}
+
+.reviews__title {
+   margin: 0 0 60px;
+}
+
+.reviews__card {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 325px;
+   min-height: 440px;
+   padding: 30px;
+   box-sizing: border-box;
+   
+   color: #1D1D1D;
+   background: #F4F4F4;
+}
+
+.reviews__card-title {
+   font-size: 22px;
+   font-weight: 400;
+}
+
+.reviews__card-text {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 1.4;
+}
+
+.reviews__card-box {
+   display: flex;
+}
+
+.reviews__card-photo {
+   width: 64px;
+   height: 64px;
+   margin: 0 15px 0 0;
+
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.reviews__card-img {
+   display: block;
+   width: 100%;
+   height: 100%;
+
+   object-fit: cover;
+}
+
+.reviews__card-name {
+   font-family: 'Open Sans', Arial;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 1.4;
+}
+
+.reviews__card-rating {
+   display: flex;
+   margin: 15px 0 0;
+   padding: 0;
+
+   list-style: none;
+}
+
+.reviews__card-star {
+   width: 16px;
+   height: 16px;
+   margin: 0 4px 0 0;
+
+   color: #BB6BFD;
+}
+
+.swiper {
+   width: 1110px;
 }
